@@ -8,6 +8,7 @@ import ro.teamnet.animals.exceptii.exceptii.Interfete.AngajatZoo;
  */
 public class IngrijitorZoo implements AngajatZoo {
 
+    private int bonus;
     public void lucreaza(Animal animal)
     {
         System.out.println("Ingrijitorul intra in cusca animalului");
@@ -18,7 +19,18 @@ public class IngrijitorZoo implements AngajatZoo {
         animal.faceBaie();
         animal.seJoaca();
         animal.mananca(mancare);
+        this.bonus=calculeazaBonusSalarial();
+        System.out.println(this.bonus);
         if(animal instanceof AnimalZooRar && mancare==null)
             throw new AnimalPeCaleDeDisparitieException("Vezi ca asta nu mai duce mult, terminatule");
+    }
+
+    public int getBonus() {
+        return bonus;
+    }
+
+    public int calculeazaBonusSalarial()
+    {
+        return 3*valoareBonusPerAnimal;
     }
 }
