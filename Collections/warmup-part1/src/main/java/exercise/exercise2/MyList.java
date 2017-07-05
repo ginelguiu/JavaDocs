@@ -100,6 +100,10 @@ public class MyList<Integer> extends ArrayList<Integer> {
         return super.remove(index);
     }
 
+    @Override
+    public boolean isEmpty() {
+        return super.isEmpty();
+    }
     // TODO Exercise #2 c) Override the clear method and reset the number of different elements
 
     @Override
@@ -107,6 +111,7 @@ public class MyList<Integer> extends ArrayList<Integer> {
         differentElements=0;
         super.clear();
     }
+
 
     // TODO Exercise #2 d) Return the number of different elements that exist into the list
     public int getDifferentElements() {

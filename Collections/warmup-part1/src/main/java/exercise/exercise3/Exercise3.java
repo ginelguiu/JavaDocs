@@ -1,6 +1,9 @@
 package exercise.exercise3;
 
+import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.TreeSet;
 
 /**
  * Created by Radu.Hoaghe on 04/20/2015.
@@ -33,14 +36,21 @@ public class Exercise3 {
         // TODO Exercise #3 a) Check the content of the elements you will add into the Set
 
         // TODO Exercise #3 b) add the elements from listToAdd to the Sets
-
+        HashSet<String> hashuno=new HashSet<String>();
+        LinkedHashSet<String> hashdos = new LinkedHashSet<String>();
+        TreeSet<String> hashtres = new TreeSet<String>();
+        for(String s:listToAdd) {
+            hashuno.add(s);
+            hashdos.add(s);
+            hashdos.add(s);
+        }
         // TODO Exercise #3 c) Check the content of the Sets
         System.out.println("\nThe elements contained in the first Set: ");
-
+        System.out.println(hashuno);
         System.out.println("\nThe elements contained in the second Set: ");
-
+        System.out.println(hashdos);
         System.out.println("\nThe elements contained in the third Set: ");
-
+        System.out.println(hashtres);
 
         System.out.println("\nThe elements contained in the TreeSet after inserting two duplicates: ");
 
