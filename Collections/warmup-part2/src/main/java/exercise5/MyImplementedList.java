@@ -1,4 +1,4 @@
-package exercise.exercise4;
+package exercise5;
 
 import java.util.*;
 
@@ -59,7 +59,7 @@ public class MyImplementedList<E> implements Iterable<E>{
     private int capacityAfterExtending;
 
     //TODO a) implement the empty constructor for the your data structure
-    public MyImplementedList() {
+    public MyImplementedList(int BUCKET_ARRAY_SIZE) {
         //TODO a) HINT - DEFAULT_CAPACITY, capacityAfterExtending and elementData properties
         elementData=new Object[DEFAULT_CAPACITY];
         capacityAfterExtending=DEFAULT_CAPACITY;
