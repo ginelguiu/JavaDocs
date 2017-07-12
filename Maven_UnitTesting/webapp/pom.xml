@@ -25,11 +25,7 @@
   <build>
     <finalName>webapp</finalName>
     <plugins>
-	<plugin>
-		<groupId>org.mortbay.jetty</groupId>
-		<artifactId>maven-jetty-plugin</artifactId>
 
-	</plugin>
       <plugin>
         <groupId>org.liquibase</groupId>
         <artifactId>liquibase-maven-plugin</artifactId>
